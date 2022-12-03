@@ -28,7 +28,7 @@ const Home = () => {
     }
     console.log(dataarray,datearray);
     return (
-        <div className="relative top-16 p-20">
+        <div className="relative top-16 p-5 lg:p-20">
                 <div className="overflow-x-auto ">
                  <table className="table w-full">
                

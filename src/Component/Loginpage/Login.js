@@ -31,11 +31,11 @@ const Login = () => {
     }
     return (
         <div>
-            <div className="flex justify-around items-center p-10 h-screen">
-                <div className="w-full p-40">
-                   <img src={img} alt="" className="w-full"></img>
+            <div className="flex justify-around flex-col lg:flex-row items-center p-10 h-screen">
+                <div className="w-full p-5 lg:p-40">
+                   <img src={img} alt="" className="w-full hidden lg:block"></img>
                 </div>
-                <div className="w-8/12 h-[90vh] shadow-lg">
+                <div className="w-full lg:w-8/12 h-[90vh] shadow-lg">
                     <Loginfrom
                     register={register}
                     handleSubmit={handleSubmit}
