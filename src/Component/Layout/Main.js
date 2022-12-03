@@ -7,7 +7,10 @@ const Main = () => {
     return (
         <div>
             <Header></Header>
-            <Signup></Signup>
+            <div>
+            <Outlet></Outlet>
+             
+            </div>
         </div>
     );
 };

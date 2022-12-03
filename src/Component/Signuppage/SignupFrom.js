@@ -3,6 +3,7 @@ import React from 'react';
 import { useState } from 'react';
 import {faArrowRight} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 const SignupFrom = ({errors, handleSubmit,register,onSubmit}) => {
     const[next,setNext]=useState(0);
     return (
@@ -51,7 +52,8 @@ const SignupFrom = ({errors, handleSubmit,register,onSubmit}) => {
         </form>
        {
         next===0&&<div className="text-right p-5 font-semibold pr-10">
-            <p>Already have an account? <span className='text-[#1678CB] '>LOGIN HERE!</span></p>
+            <p>Already have an account? <Link to="/login" className='text-[#1678CB] '>LOGIN HERE!</Link></p>
+            
         </div>
        }
        </> 
