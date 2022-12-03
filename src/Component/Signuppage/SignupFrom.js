@@ -12,7 +12,7 @@ const SignupFrom = ({errors, handleSubmit,register,onSubmit}) => {
                 {
                     next===0&&<>
                     <input type="text" {...register("first_name")} placeholder="Write First Name" className="w-full max-w-xs" required/>
-                    <input type="text" {...register("Lastlast_Name")} placeholder="Write Last Name" className="w-full max-w-xs"  required/>
+                    <input type="text" {...register("last_Name")} placeholder="Write Last Name" className="w-full max-w-xs"  required/>
                     <button className="btn bg-[#1678CB] border-none mt-10 rounded-2xl hover:bg-white hover:text-black" onClick={()=>setNext(1)}>Next Step <span> <FontAwesomeIcon icon={faArrowRight} className="text-lg ml-2"></FontAwesomeIcon></span></button>
                     </>
                 }
@@ -20,7 +20,7 @@ const SignupFrom = ({errors, handleSubmit,register,onSubmit}) => {
                     next===1&&<>
                     <div className="flex gap-2 w-full max-w-xs">
                     <input type="text" placeholder="+880" className="w-16" readOnly />
-                    <input type="text" {...register("last_Name")} placeholder="1xxxxxxxxxx" className="w-full max-w-xs" />
+                    <input type="text" {...register("phone_number")} placeholder="1xxxxxxxxxx" className="w-full max-w-xs" />
                     </div>
                     
                     <input type="email" {...register("email")} placeholder="Write Email Address" className="w-full max-w-xs"  />
