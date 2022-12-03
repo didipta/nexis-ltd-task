@@ -29,6 +29,9 @@ const Home = () => {
     console.log(dataarray,datearray);
     return (
         <div className="relative top-16 p-5 lg:p-20">
+          <div className="w-full p-5">
+            <p className="bg-[#1678CB] p-6 w-full lg:w-80 text-center text-xl font-bold m-auto text-white">Attendance information</p>
+          </div>
                 <div className="overflow-x-auto ">
                  <table className="table w-full">
                
